@@ -20,7 +20,14 @@
 html {
 	scroll-behavior: smooth;
 }
-
+keyframes slideDown {
+	transform: translateY(-100%);
+	opacity: 0;
+}
+to {
+	transform: translateY(0);
+	opacity: 1;
+}
 body {
   background: linear-gradient(to bottom, @negro_suave, @negro_suave);
   color: @blanco;
@@ -42,7 +49,7 @@ body {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 40px 20px;
+		padding: 15px 20px;
 
 		.logo a {
 			font-family: Arial, sans-serif;
@@ -61,8 +68,8 @@ body {
 			text-align: none;
 			color: @blanco;
 			margin: 0 15px;
-			padding: 8px 15px;
-			transition: 0.5s;
+			padding: 3px;
+			transition: .5s;
 			text-decoration: none;
 
 			&:hover {
@@ -84,14 +91,14 @@ body {
 .inicio {
 	background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1));
 	background-size: cover;
-	height: 80vh;
+	height: 100vh;
 	color: @blanco;
 	display: flex;
 	align-items: center;
 
 	.contenido-banner {
 		padding: 30px;
-		background-color: @gris_carbon;
+		background-color: @gris_oscuro;
 		max-width: 400px;
 		margin: auto;
 		text-align: center;
