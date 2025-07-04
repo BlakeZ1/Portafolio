@@ -9,13 +9,13 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^7.0.1"
+    "vite": "^7.0.2"
   },
   "dependencies": {
     "git": "^0.1.5",
     "glob": "^11.0.3",
     "less": "^4.3.0",
-    "vite-plugin-handlebars": "^2.0.0",
+    "vite-plugin-handlebars": "^1.5.0",
     "vite-plugin-minify": "^2.1.0",
     "vite-plugin-purgecss": "^0.2.13"
   }
